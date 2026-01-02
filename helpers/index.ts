@@ -1,0 +1,1 @@
+export { getFullFormattedDate } from './date'
