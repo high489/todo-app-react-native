@@ -4,21 +4,15 @@ import { COLORS } from '@constants'
 import { useTodo } from '@hooks'
 import { Header, TodoCreator, TodoList } from '@layouts'
 
-
 export default function Index() {
   const {
     todos,
-    isLoading,
     completedTodos,
     onAddTodo,
     onCheckTodo,
     onUpdateTodoTitle,
     onDeleteTodo,
   } = useTodo()
-
-  if (isLoading) {
-    return null
-  }
 
   return (
     <View
